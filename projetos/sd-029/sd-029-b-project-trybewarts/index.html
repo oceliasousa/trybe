@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+        <title>Projeto TrybeWarts</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+        <link href="style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <header class="header">
+                <img class="trybewarts-header-logo" src="images/trybewarts-header-logo.svg" alt="Trybewarts Logo">
+                <h1 id="trybewarts-header-title">Trybewarts</h1>
+                <form class="trybewarts-login form">
+                    <input class="form-control" id="email" type="email" name="email" placeholder="Email">
+                    <input class="form-control" id="password" type="text" name="password" placeholder="Senha">
+                    <button class="btn btn-secondary" id="login-button" type="submit">Entrar</button>
+                </form>
+            </header>
+        </div>
+
+        <div id="main-container">
+            <div>
+                <main class="main">
+                    <form id="evaluation-form">
+                        <h3 class="text-center">Formulário de avaliação</h3>
+                        <div class="my-2 border rounded p-4 d-flex justify-content-center gap-4">
+                            <div class="form-group w-100 d-flex flex-column gap-2">
+                                <input class="form-control" id="input-name" placeholder="Nome" type="text">
+                                <input class="form-control" id="input-email" placeholder="Email" type="text">
+                            </div>
+                            <div class="form-group w-100 d-flex flex-column gap-2">
+                                <input class="form-control" id="input-lastname" placeholder="Sobrenome" type="text">
+                                <div class="d-flex align-items-center gap-2">
+                                    <label for="house">Casa</label>
+                                    <select class="form-control" id="house">
+                                        <option id="gitnoria-house" value="Gitnória">Gitnória</option>
+                                        <option id="reactpuff-house" value="Reactpuff">Reactpuff</option>
+                                        <option id="corvinode-house" value="Corvinode">Corvinode</option>
+                                        <option id="pytherina-house" value="Pytherina">Pytherina</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mb-2 border rounded p-4 d-flex justify-contet-center">
+                            <div id="familia" class="family form-group w-100 d-flex flex-column gap-2">
+                                <label class="mb-2" id="label-family">Qual sua família?</label>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="front" type="radio" name="family" value="Frontend">
+                                    <label class="form-check-label" for="front">Família Frontend</label>
+                                </div>
+                                <div  class="form-check">
+                                    <input class="form-check-input" id="back" type="radio" name="family" value="Backend">
+                                    <label class="form-check-label" for="back">Família Backend</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" id="full" type="radio" name="family" value="FullStack">
+                                    <label class="form-check-label" for="full">Família FullStack</label>
+                                </div>                            
+                            </div>
+
+                            <div class="form-group w-100 d-flex flex-column gap-2" id="materia">
+                                <label class="mb-2" id="label-content">Qual conteúdo você está com mais vontade de aprender?</label>
+                                <div class="form-group w-100 d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class=" subject form-check-input" id="hofs" type="checkbox" value="HoFs">
+                                        <label class="form-check-label" for="hofs">HoFs</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="subject form-check-input" id="jest" type="checkbox" value="Jest">
+                                        <label class="form-check-label" for="jest">Jest</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="subject form-check-input" id="promises" type="checkbox" value="Promises">
+                                        <label class="form-check-label" for="promises">Promises</label>
+                                    </div>
+                                </div>
+
+                                <div class="form-group w-100 d-flex gap-4">
+                                    <div class="form-check">
+                                        <input class="subject form-check-input" id="react" type="checkbox" value="React">
+                                        <label class="form-check-label" for="react">React</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="subject form-check-input" id="sql" type="checkbox" value="SQL">
+                                        <label class="form-check-label" for="sql">SQL</label>                            
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="subject form-check-input" id="python" type="checkbox" value="Python">
+                                        <label class="form-check-label" for="python">Python</label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="border rounded p-4">
+                            <div class="mb-3" id="radio">
+                                <label class="me-3" id="label-rate">Como você avalia a Trybewarts?</label>
+                                <input class="form-check-input" id="radio-1" value="1" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-1">1</label>
+                                <input class="form-check-input" id="radio-2" value="2" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-2">2</label>
+                                <input class="form-check-input" id="radio-3" value="3" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-3">3</label>
+                                <input class="form-check-input" id="radio-4" value="4" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-4">4</label>
+                                <input class="form-check-input" id="radio-5" value="5" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-5">5</label>
+                                <input class="form-check-input" id="radio-6" value="6" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-6">6</label>
+                                <input class="form-check-input" id="radio-7" value="7" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-7">7</label>
+                                <input class="form-check-input" id="radio-8" value="8" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-8">8</label>
+                                <input class="form-check-input" id="radio-9" value="9" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-9">9</label>
+                                <input class="form-check-input" id="radio-10" value="10" type="radio" name="rate">
+                                <label class="form-check-label" for="radio-10">10</label>
+                            </div>
+
+                            <div class="form-group mb-3" id="comentario">
+                                <label class="textarea">Deixe seu comentário:</label>
+                                <div>
+                                    <textarea class="w-100 form-control" id="textarea" name="msg" id="msg" rows="3" maxlength="500"></textarea>
+                                    <span id="counter" class="counter float-end">500</span>
+                                </div>
+                            </div>
+
+                            <div class="mb-3 form-check gap-2" id="infos">
+                                <label class="form-check-label" id="label-infos" for="agreement">Você concorda com o uso das informações acima?</label>
+                                <input class="form-check-input" id="agreement" type="checkbox">
+                            </div>
+
+                            <button class="btn btn btn-secondary w-100" id="submit-btn" type="submit" disabled>Enviar</button>
+                        </div>
+                    </form>
+                    <div class="d-flex align-items-center">
+                        <img id="trybewarts-forms-logo" src="images/trybewarts-colored.svg" alt="Logo TrybeWarts">
+                    </div>
+                </main>
+            </div>
+        </div>
+
+        <div class="ms-4" id="form-data"></div>
+        
+        <footer class="d-flex justify-content-center bg-secondary">Direitos reservados à Trybewarts©</footer>
+
+        <script src="script.js"></script>
+    </body>
+</html>

@@ -1,0 +1,84 @@
+{
+  "requirements": [
+    {
+      "bonus": false,
+      "description": "1 - Crie um título para a aplicação",
+      "enabled": true,
+      "identifier": null,
+      "order": 1,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "2 - Crie um componente Form",
+      "enabled": true,
+      "identifier": null,
+      "order": 2,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "3 - Renderize condicionalmente o formulário",
+      "enabled": true,
+      "identifier": null,
+      "order": 3,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "4 - Validar os campos do formulário",
+      "enabled": true,
+      "identifier": null,
+      "order": 4,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "5 - Crie um display para a validação da senha",
+      "enabled": true,
+      "identifier": null,
+      "order": 5,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "6 - Implemente a função do botão \"cadastrar\" do formulário",
+      "enabled": true,
+      "identifier": null,
+      "order": 6,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "7 - Permita apagar um serviço cadastrado",
+      "enabled": true,
+      "identifier": null,
+      "order": 7,
+      "skill_ids": []
+    },
+    {
+      "bonus": false,
+      "description": "8 - Implemente um checkbox para Esconder/Mostrar as senhas",
+      "enabled": true,
+      "identifier": null,
+      "order": 8,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "9 - No formulário, implemente um botão para esconder/mostrar a senha que está sendo digitada",
+      "enabled": true,
+      "identifier": null,
+      "order": 9,
+      "skill_ids": []
+    },
+    {
+      "bonus": true,
+      "description": "10 - Exibe um alerta ao cadastrar um novo serviço corretamente",
+      "enabled": true,
+      "identifier": null,
+      "order": 10,
+      "skill_ids": []
+    }
+  ]
+}

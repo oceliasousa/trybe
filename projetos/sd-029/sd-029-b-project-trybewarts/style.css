@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  background-color: rgb(50, 167, 145);
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0.25em 0.5em;
+}
+
+form {
+  display: flex;
+  width: 675px;
+  flex-direction: column;
+  backdrop-filter: blur(8px);
+
+}
+
+main {
+  display: flex;
+}
+
+#trybewarts-forms-logo {
+  height: 500px;
+}
+
+.trybewarts-login {
+  flex-direction: row;
+  justify-content: end;
+  gap: 0.5em;
+  max-width: 400px;
+}
+
+.trybewarts-header-logo {
+  height: 50px;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  background-image: url('images/hogwarts-castle.jpg');
+  background-size: cover;
+  color: white;
+  text-shadow: 0 0 10px black;
+}
+
+textarea {
+  width: 200px;
+}
+
+.form-check {
+  flex-basis: 20%;
+}
+
+#form-data {
+  position: absolute;
+  top: 100px;
+}

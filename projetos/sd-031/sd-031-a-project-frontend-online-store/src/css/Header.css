@@ -1,0 +1,116 @@
+.header {
+  background-color: var(--dark-purple);
+  gap: 10px;
+  height: 65px;
+  justify-content: space-between;
+  padding: 5px 3px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo-container {
+  justify-content: center;
+  max-width: 80px;
+}
+
+.logo-p {
+  max-width: 100%;
+}
+
+.logo-g {
+  display: none;
+  max-width: 100%;
+}
+
+.cart-container {
+  justify-content: center;
+}
+
+.count-cart {
+  background-color: var(--green);
+  border-radius: 100%;
+  color: var(--dark-purple);
+  font-weight: 700;
+  height: 25px;
+  justify-content: center;
+  position: absolute;
+  right: 11px;
+  top: 7px;
+  width: 25px;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  color: var(--light-gray);
+  outline: none;
+  padding: 7px 0;
+}
+
+.btn::placeholder {
+  color: var(--gray);
+}
+
+.btn-container {
+  border: 1px solid var(--pink);
+  border-radius: 8px;
+  gap: 5px;
+  justify-content: center;
+  padding: 0 5px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+}
+
+.search {
+  color: var(--blue);
+  justify-content: center;
+}
+
+@media ( min-width : 600px ) {
+
+  .header {
+    gap: 0;
+    justify-content: space-between;
+    padding: 0 40px;
+  }
+
+  .count-cart {
+    right: 48px;
+  }
+
+  .btn-container {
+    padding: 0 10px;
+    width: 60%;
+  }
+}
+
+@media ( min-width : 900px ) {
+
+  .header {
+    padding: 0 30px;
+  }
+
+  .logo-container {
+    max-width: 250px;
+  }
+
+  .logo-p {
+    display: none;
+  }
+
+  .logo-g {
+    display: block;
+  }
+
+  .count-cart {
+    right: 38px;
+  }
+
+  .btn-container {
+    max-width: 500px;
+  }
+}

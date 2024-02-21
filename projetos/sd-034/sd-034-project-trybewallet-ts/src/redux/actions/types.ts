@@ -1,0 +1,6 @@
+export const SAVE_USER_EMAIL = 'SAVE_USER_EMAIL';
+export const SAVE_CURRENCIES = 'SAVE_CURRENCIES';
+export const SAVE_EXPENSE = 'SAVE_EXPENSE';
+export const REMOVE_EXPENSE = 'REMOVE_EXPENSE';
+export const START_EDIT = 'START_EDIT';
+export const EDIT_EXPENSE = 'EDIT_EXPENSE';
